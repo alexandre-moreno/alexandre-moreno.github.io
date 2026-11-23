@@ -631,7 +631,7 @@
   }
 
   /* ==================== RESPONSIVE BREAKPOINTS (MOBILE & TABLET) ==================== */
-  @media (max-width: 900px) {
+  @media screen and (max-width: 900px) {
     .two-col-split,
     .exec-case-card {
       grid-template-columns: 1fr;
@@ -669,7 +669,7 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     .container {
       padding: 0 1rem;
     }
@@ -1001,11 +1001,13 @@
     .print-contact-header {
       display: flex !important;
       justify-content: space-between;
-      align-items: center;
-      padding-bottom: 8pt;
-      margin-bottom: 10pt;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4pt 12pt;
+      padding-bottom: 7pt;
+      margin-bottom: 9pt;
       border-bottom: 1.5px solid #18181B;
-      font-size: 9pt;
+      font-size: 8.8pt;
       color: #3F3F46;
     }
 
@@ -1100,7 +1102,7 @@
     }
 
     .exp-timeline {
-      gap: 8pt !important;
+      display: block !important;
       margin-bottom: 10pt !important;
     }
 
@@ -1186,7 +1188,7 @@
     }
 
     .cases-grid {
-      gap: 8pt !important;
+      display: block !important;
     }
 
     .exec-case-card {
